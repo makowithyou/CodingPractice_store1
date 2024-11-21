@@ -2,12 +2,12 @@
 :root {
     --main-bg-color: ;
     --sub-bg-color: ;
-    --font-color: ;
+    --font-color: #000;
     --border-color: ;
 }
 * {
     box-sizing: border-box;
-    color: ;
+    color: var(--font-color);
 }
 body {
     font-family: "Helvetica Neue", Arial,  "Hiragino Sans","Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
@@ -16,19 +16,38 @@ body {
 img {
     display: block;
 }
-h1, h2, h3, h4, h5, p, ul, ol, dl, dd {
+h1, h2, h3, h4, h5, p, ul, li, ol, dl, dd {
     margin: unset;
     padding: unset;
+    list-style: none;
 }
 h2 {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 1.7;
+    color: #ffff;
+}
+h3 {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 1.7;
+    border-bottom: 6px solid #E03131;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+dt, dd {
+    font-family: Arial;
+    font-size: 14.4px;
+    line-height: 1.7;
 }
 a, a:visited {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-family: Arial;
+    font-size: 14.5px;
+    line-height: 1.7;
+    color: var(--font-color);
     text-decoration: none;
 }
 p.copy {
@@ -43,6 +62,80 @@ div.container {
 }
 
 /* 狭い画面向けの既定の CSS レイアウト値 */
+header div.mainvisual {
+    background-image: url("https://lh3.googleusercontent.com/d/1DZjVXblm9jVgEcwRpfz4NunNwm15Su93");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+header div.mainvisual nav {
+    position: absolute;
+    right: 0;
+    padding: 20px 40px;
+}
+header div.mainvisual nav ul {
+    display: flex;
+}
+header div.mainvisual nav ul li:not(:last-of-type) {
+    margin-right: 30px;
+}
+header div.mainvisual nav ul li a,
+header div.mainvisual nav ul li a:visited {
+    font-weight: bold;
+    color: #ffffff;
+}
+header div.mainvisual h1  {
+    position: absolute;
+    top: 50%;
+    padding: 0 16px;
+}
+header div.mainvisual h1 img.logo {
+    width: 100%;
+}
+section div.main_section_bg {
+    height: 94px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section#MENU {
+    margin-top: 10px;
+}
+section#MENU div.main_section_bg {
+    background-image: url("https://lh3.googleusercontent.com/d/1lyt53yuz0zt5AXp5XG0a02lIPpU6UG1V");
+}
+section#MENU div.container div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+}
+section#MENU dl {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+section#MENU dl:not(:last-of-type) {
+    margin-bottom: 25px;
+}
+section#MENU dt {
+    border-bottom: 1px dotted #000;
+    width: 100%;
+    margin-right: 12px;
+}
+section#ABOUT {
+    margin-top: 115px;
+}
+section#ABOUT div.main_section_bg {
+    background-image: url("https://lh3.googleusercontent.com/d/1xOnMI41ecoKbj2TR8tgt2Duodjp_T-6-");
+}
+section#LOCATION div.main_section_bg {
+    background-image: url("https://lh3.googleusercontent.com/d/1ywwEacLTs9WTxEHifr1bHa-nFvWpfzfN");
+}
+
 
 @media (min-width: 480px) {
   /* 中型の画面向けの CSS */
