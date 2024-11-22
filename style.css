@@ -99,6 +99,7 @@ header div.mainvisual h1 img.logo {
 }
 section div.main_section_bg {
     height: 94px;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     display: flex;
