@@ -92,6 +92,11 @@ header div.mainvisual nav ul li a,
 header div.mainvisual nav ul li a:visited {
     font-weight: bold;
     color: #ffffff;
+    text-shadow: 2px 2px #00000094;
+}
+header div.mainvisual nav ul li a:hover {
+    color: #E03131;
+    transition: color 0.5s ease;
 }
 header div.mainvisual h1  {
     padding: 0 16px;
@@ -118,6 +123,7 @@ section#MENU div.container div {
     flex-direction: column;
     align-items: center;
     margin-bottom: 5px;
+    width: 100%;
 }
 section#MENU dl {
     width: 100%;
@@ -224,8 +230,57 @@ footer p.copy {
 
 @media (min-width: 800px) {
   /* 広い画面向けの CSS */
-
+h3 {
+    font-size: 40px;
+}
 section div.main_section_bg {
+    height: 300px;
     background-attachment: fixed;
+}
+section#MENU {
+    margin-top: 20px;
+}
+section#MENU div.container {
+    display: flex;
+    margin-top: 90px;
+    margin-bottom: 170px;
+}
+section#MENU div.container > div:first-of-type {
+    border-right: 1px solid #000;
+    padding-right: 45px;
+}
+section#MENU div.container > div:last-of-type {
+    padding-left: 45px;
+}
+section#MENU h3 {
+    margin-top: unset;
+}
+section#MENU h3:last-of-type {
+    margin-top: 80px;
+}
+section#ABOUT h3 {
+    margin: 90px 0;
+}
+section#ABOUT div.texts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    margin-bottom: 60px;
+}
+section#ABOUT p {
+    margin-bottom: 20px;
+}
+section#LOCATION {
+    margin-top: 170px;
+}
+section#LOCATION h3 {
+    margin-top: 90px;
+    margin-bottom: 70px;
+}
+section#LOCATION iframe.map {
+    height: 400px;
+}
+footer p.copy {
+    margin-top: 170px;
 }
 }
