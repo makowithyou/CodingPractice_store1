@@ -202,6 +202,11 @@ section#ABOUT a.button::after {
     height: 1px;
     background-color: #E03131;
 }
+/* ホバー時 */
+section#ABOUT div.button_layout:hover::before {
+    background-color: aqua;
+}
+/* ホバー時 */
 section#LOCATION {
     margin-top: 80px;
 }
