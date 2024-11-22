@@ -72,9 +72,13 @@ header div.mainvisual {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 header div.mainvisual nav {
     position: absolute;
+    top: 0;
     right: 0;
     padding: 20px 40px;
 }
@@ -90,8 +94,6 @@ header div.mainvisual nav ul li a:visited {
     color: #ffffff;
 }
 header div.mainvisual h1  {
-    position: absolute;
-    top: 50%;
     padding: 0 16px;
 }
 header div.mainvisual h1 img.logo {
