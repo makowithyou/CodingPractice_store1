@@ -38,6 +38,11 @@ h3 {
     margin-top: 30px;
     margin-bottom: 25px;
 }
+p {
+    font-family: Arial;
+    font-size: 14.4px;
+    line-height: 2;
+}
 dt, dd {
     font-family: Arial;
     font-size: 14.4px;
@@ -51,9 +56,8 @@ a, a:visited {
     text-decoration: none;
 }
 p.copy {
-    font-weight: ;
-    font-size: px;
-    color: ;
+    font-size: 10px;
+    text-align: center;
 }
 div.container {
     max-width: 1000px;
@@ -132,8 +136,87 @@ section#ABOUT {
 section#ABOUT div.main_section_bg {
     background-image: url("https://lh3.googleusercontent.com/d/1xOnMI41ecoKbj2TR8tgt2Duodjp_T-6-");
 }
+section#ABOUT div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section#ABOUT h3 {
+    margin-bottom: 35px;
+}
+section#ABOUT p {
+    margin-bottom: 20px;
+}
+section#ABOUT div.texts {
+    margin-bottom: 30px;
+}
+section#ABOUT div.button_layout {
+    position: relative;
+}
+section#ABOUT div.button_layout::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 32px;
+    background-color: #E03131;
+}
+section#ABOUT div.button_layout::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+    height: 32px;
+    background-color: #E03131;
+}
+section#ABOUT a.button {
+    padding: 16.5px 44px;
+    position: relative;
+    display: inline-block;
+}
+section#ABOUT a.button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 32px;
+    height: 1px;
+    background-color: #E03131;
+}
+section#ABOUT a.button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 32px;
+    height: 1px;
+    background-color: #E03131;
+}
+section#LOCATION {
+    margin-top: 80px;
+}
 section#LOCATION div.main_section_bg {
     background-image: url("https://lh3.googleusercontent.com/d/1ywwEacLTs9WTxEHifr1bHa-nFvWpfzfN");
+}
+section#LOCATION div.container {
+    display: flex;
+    flex-direction: column;
+}
+section#LOCATION h3 {
+    align-self: center;
+}
+section#LOCATION iframe.map {
+    height: 407px;
+    margin-bottom: 20px;
+}
+section#LOCATION p {
+    margin-bottom: 10px;
+}
+footer p.copy {
+    margin-top: 70px;
+    margin-bottom: 10px;
 }
 
 
