@@ -204,7 +204,20 @@ section#ABOUT a.button::after {
 }
 /* ホバー時 */
 section#ABOUT div.button_layout:hover::before {
-    background-color: aqua;
+    height: 100%;
+    transition: all 0.2s ease;
+}
+section#ABOUT div.button_layout:hover::after {
+    height: 100%;
+    transition: all 0.2s ease;
+}
+section#ABOUT a.button:hover::before {
+    width: 100%;
+    transition: all 0.2s ease;
+}
+section#ABOUT a.button:hover::after {
+    width: 100%;
+    transition: all 0.2s ease;
 }
 /* ホバー時 */
 section#LOCATION {
