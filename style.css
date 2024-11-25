@@ -271,6 +271,9 @@ section#MENU div.container > div:first-of-type {
 section#MENU div.container > div:last-of-type {
     padding-left: 45px;
 }
+section#MENU h2 {
+    font-size: 72px;
+}
 section#MENU h3 {
     margin-top: unset;
 }
