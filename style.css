@@ -277,7 +277,7 @@ section#MENU h2 {
 section#MENU h3 {
     margin-top: unset;
 }
-section#MENU h3:last-of-type {
+section#MENU h3.other {
     margin-top: 80px;
 }
 section#ABOUT h3 {
