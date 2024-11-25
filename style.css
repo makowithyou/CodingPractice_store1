@@ -236,6 +236,7 @@ section#LOCATION h3 {
 section#LOCATION iframe.map {
     height: 407px;
     margin-bottom: 20px;
+    filter: grayscale(1);
 }
 section#LOCATION p {
     margin-bottom: 10px;
