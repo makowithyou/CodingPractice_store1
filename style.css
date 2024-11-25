@@ -249,6 +249,9 @@ footer p.copy {
 
 @media (min-width: 800px) {
   /* 広い画面向けの CSS */
+h2 {
+    font-size: 72px;
+}
 h3 {
     font-size: 40px;
 }
@@ -270,9 +273,6 @@ section#MENU div.container > div:first-of-type {
 }
 section#MENU div.container > div:last-of-type {
     padding-left: 45px;
-}
-section#MENU h2 {
-    font-size: 72px;
 }
 section#MENU h3 {
     margin-top: unset;
